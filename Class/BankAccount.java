@@ -8,21 +8,18 @@ public class BankAccount {
         this.accountName = accountName;
         this.balance = balance;
     }
-    public void deposit(double amount) {
+    public double deposit(double amount) {
         balance += amount;
+        return amount;
     }
 
-    public void withdrawal(double amount) {
-        balance -= amount;
+    public double withdrawal(double amount) {
+       return this.balance - amount;
     }
 
     public void accountInfo() {
         System.out.println("My account balance: $" + balance);
-    }
-    public void AddAccount () {
-        System.out.println("Larry's account balance: $" + balance);
-        System.out.println("Mary's account balance: $" + balance);
-
+        System.out.println(this.accountName + "'s account balance is " + this.balance);
     }
 
 }
