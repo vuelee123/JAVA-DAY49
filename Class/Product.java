@@ -1,3 +1,5 @@
+package Class;
+
 public class Product {
     private String productName;
     private Double productCost;
